@@ -22,6 +22,7 @@ export class ClientsComponent implements OnInit {
     this.name = "";
     this.age = 0;
   }
+  
   deleteClient(i: number) {
     console.log("deletando cliente " + i);
     this.clients.splice(i, 1);

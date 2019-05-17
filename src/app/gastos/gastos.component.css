@@ -1,0 +1,12 @@
+mat-card {
+    margin: 20px;
+}
+
+.card-actions{
+    
+}
+.btn-card-actions {
+    margin-right: 5px;
+    position: relative;
+    left: 95px;
+}

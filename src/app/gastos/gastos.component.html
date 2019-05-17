@@ -1,0 +1,38 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Gastos</mat-card-title>
+    <mat-card-subtitle>Gastarû</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Memorando</mat-label>
+        <input matInput placeholder="Abacate" [(ngModel)]="memo">
+        <mat-icon matSuffix>bookmark_border</mat-icon>
+        <mat-hint>Lembrete do que você gastou</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Preço</mat-label>
+        <input matInput placeholder="10.00" [(ngModel)]="valor">
+        <mat-icon matSuffix>attach_money</mat-icon>
+        <mat-hint>Valor do gasto</mat-hint>
+      </mat-form-field>
+    </p>
+  </mat-card-content>
+  <mat-card-actions class="card-actions">
+      <button mat-fab color="primary" class="btn-card-actions" (click)="saveGasto();">
+          <mat-icon>check</mat-icon>
+      </button>
+      <button mat-fab color="warn" class="btn-card-actions" (click)="cancelGasto();">
+          <mat-icon>cancel</mat-icon>
+      </button>
+  </mat-card-actions>
+</mat-card>
+
+<app-item-gasto 
+  *ngFor="let gasto of gastos"
+  [gasto]="gasto"
+>
+</app-item-gasto>

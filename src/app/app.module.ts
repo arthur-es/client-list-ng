@@ -16,12 +16,16 @@ import {
   MatInputModule,
   MatButtonModule,
 } from '@angular/material';
+import { GastosComponent } from './gastos/gastos.component';
+import { ItemGastoComponent } from './gastos/item-gasto/item-gasto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClientsComponent,
-    ItemClientComponent
+    ItemClientComponent,
+    GastosComponent,
+    ItemGastoComponent,
   ],
   imports: [
     BrowserModule,
