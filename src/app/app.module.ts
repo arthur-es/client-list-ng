@@ -4,8 +4,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ClientsComponent } from './clients/clients.component';
+import { ItemClientComponent } from './clients/item-client/item-client.component';
 
 import {
   MatCardModule, 
@@ -14,8 +16,6 @@ import {
   MatInputModule,
   MatButtonModule,
 } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ItemClientComponent } from './clients/item-client/item-client.component';
 
 @NgModule({
   declarations: [
